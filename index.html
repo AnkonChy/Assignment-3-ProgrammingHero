@@ -42,6 +42,7 @@
               work3: "rgb(164, 218, 195) ",
               work4: "rgb(119, 170, 234)",
               portbtn: "rgba(171, 239, 95, 0.2)",
+              footbg: "rgb(28, 28, 28)",
             },
             fontFamily: {
               Inter: "Inter",
@@ -630,7 +631,7 @@
 
       <!-- discuss project section start  -->
       <section
-        class="relative bg-[url('./assets/bg.jpg')] w-full bg-cover bg-center bg-no-repeat pt-12"
+        class="relative bg-[url('./assets/bg.jpg')] w-full bg-cover bg-center bg-no-repeat pt-12 pb-28"
       >
         <div class="absolute inset-0 bg-white/60"></div>
         <div class="relative z-10">
@@ -699,6 +700,46 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- footer section start  -->
+    <footer
+      class="flex flex-col space-y-8 items-center bg-footbg text-white rounded p-10 mt-2"
+    >
+      <div class="flex items-center gap-2">
+        <div
+          class="rounded-full bg-primary w-9 h-9 flex justify-center items-center text-2xl"
+        >
+          <i class="fa-solid fa-arrow-up rotate-45"></i>
+        </div>
+        <a class="text-2xl md:text-3xl lg:text-4xl font-extrabold">Rinterio</a>
+      </div>
+      <p class="md:w-4/5 lg:w-3/6 text-center">
+        The barn house captivates with its blend of rustic charm and modern
+        sophistication, featuring weathered wood, sleek metal accents.
+      </p>
+      <nav
+        class="grid grid-cols-1 md:grid-cols-5 items-center text-center gap-10 md:gap-14 lg:gap-24"
+      >
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Services</a>
+        <a class="link link-hover">Portfolio</a>
+        <a class="link link-hover">Blogs</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <aside>
+        <div class="">
+          <button
+            class="flex justify-center items-center gap-2 bg-primary text-base md:text-lg lg:text-xl font-extrabold rounded-full px-24 md:px-14 lg:px-4 py-2"
+          >
+            Send Mail
+            <div
+              class="rounded-full bg-black w-9 h-9 flex justify-center items-center text-xl"
+            >
+              <i class="fa-solid fa-arrow-up rotate-45 text-white"></i>
+            </div>
+          </button>
+        </div>
+      </aside>
+    </footer>
   </body>
 </html>
